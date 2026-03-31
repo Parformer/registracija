@@ -448,3 +448,255 @@ h3{
 .btn--ig{
   letter-spacing: .2px;
 }
+/* --- Single service layout after removing pregnancy section --- */
+.section__head--center{
+  text-align: center;
+  justify-items: center;
+}
+
+.serviceSingle{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.card--service{
+  overflow: hidden;
+}
+
+.card--service .card__media img{
+  height: 320px;
+  object-fit: cover;
+}
+
+.registrationGrid{
+  align-items: start;
+}
+
+/* Make iframe area a bit cleaner */
+.formWrap{
+  min-height: 620px;
+}
+
+.formWrap iframe{
+  width: 100%;
+  height: 620px;
+  border: 0;
+}
+
+/* Better spacing when there is only one service card */
+@media (max-width: 860px){
+  .serviceSingle{
+    max-width: 100%;
+  }
+
+  .card--service .card__media img{
+    height: 240px;
+  }
+}
+/* ===== refined layout ===== */
+
+.hero__content{
+  max-width: 620px;
+}
+
+.hero h1{
+  max-width: 10ch;
+  line-height: 1.02;
+  margin-bottom: 14px;
+}
+
+.hero__note{
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.section__head--center{
+  text-align: center;
+  justify-items: center;
+}
+
+.servicesSection{
+  padding-top: 72px;
+}
+
+.serviceFeature{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.serviceFeature__image{
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 14px 40px rgba(0,0,0,.08);
+  background: #fff;
+}
+
+.serviceFeature__image img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.serviceFeature__content{
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.05);
+}
+
+.eyebrow{
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.serviceFeature__content h3{
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.serviceFeature__content p{
+  margin-bottom: 16px;
+  color: #2d2d2d;
+}
+
+.featureList{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: grid;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.featureList li{
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.serviceFeature__btn{
+  width: auto;
+  min-width: 180px;
+}
+
+.registrationGrid{
+  align-items: start;
+}
+
+.card--soft{
+  border-radius: 20px;
+  box-shadow: none;
+  background: rgba(255,255,255,.8);
+}
+
+.card--soft .card__body{
+  padding: 24px;
+}
+
+.steps{
+  display: grid;
+  gap: 14px;
+  padding-left: 20px;
+}
+
+.steps li{
+  margin: 0;
+  color: var(--muted);
+}
+
+.formWrap{
+  min-height: 640px;
+  border-radius: 20px;
+}
+
+.formWrap iframe{
+  width: 100%;
+  height: 640px;
+  border: 0;
+}
+
+.gallery{
+  gap: 16px;
+}
+
+.gallery__item{
+  border-radius: 20px;
+}
+
+.gallery__item img{
+  transition: transform .35s ease;
+}
+
+.gallery__item:hover img{
+  transform: scale(1.02);
+}
+
+.info{
+  border-radius: 18px;
+  padding: 18px;
+  background: rgba(255,255,255,.85);
+}
+
+.priceRow{
+  margin-top: 22px;
+}
+
+.footer{
+  margin-top: 26px;
+}
+
+@media (min-width: 860px){
+  .serviceFeature{
+    grid-template-columns: 1.05fr .95fr;
+    gap: 32px;
+  }
+
+  .serviceFeature__image img{
+    height: 520px;
+  }
+
+  .registrationGrid{
+    grid-template-columns: .9fr 1.1fr;
+  }
+}
+
+@media (max-width: 860px){
+  .hero{
+    min-height: 68vh;
+  }
+
+  .hero h1{
+    max-width: 100%;
+  }
+
+  .serviceFeature__image img{
+    height: 300px;
+  }
+
+  .serviceFeature__content{
+    padding: 22px;
+  }
+
+  .serviceFeature__content h3{
+    font-size: 24px;
+  }
+
+  .formWrap{
+    min-height: 560px;
+  }
+
+  .formWrap iframe{
+    height: 560px;
+  }
+}
